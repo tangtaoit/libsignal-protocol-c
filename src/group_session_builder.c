@@ -181,6 +181,32 @@ complete:
     return result;
 }
 
+int get_sender_key_public(group_session_builder *builder, ec_public_key **public_key,
+        const signal_protocol_sender_key_name *sender_key_name)
+{
+    int result = 0;
+    sender_key_record *record = 0;
+    sender_key_state *state = 0;
+
+    assert(builder);
+    assert(builder->store);
+
+    result = signal_protocol_sender_key_load_key(builder->store, &record, sender_key_name);
+    if(result < 0) {
+        goto complete;
+    }
+
+    result = sender_key_record_get_sender_key_state(record, &state);
+    if(result < 0) {
+        goto complete;
+    }
+
+    *public_key = sender_key_state_get_signing_key_public(state);
+complete:
+    SIGNAL_UNREF(record);
+    return result;
+}
+
 void group_session_builder_free(group_session_builder *builder)
 {
     if(builder) {
