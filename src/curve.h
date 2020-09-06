@@ -11,6 +11,7 @@ extern "C" {
 
 #define CURVE_SIGNATURE_LEN 64
 #define VRF_SIGNATURE_LEN 96
+#define DJB_KEY_LEN 32
 
 int curve_internal_fast_tests(int silent);
 
