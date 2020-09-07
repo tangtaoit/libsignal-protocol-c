@@ -13,7 +13,6 @@
 #include "signal_utarray.h"
 
 #define DJB_TYPE 0x05
-#define DJB_KEY_LEN 32
 #define VRF_VERIFY_LEN 32
 
 struct ec_public_key
