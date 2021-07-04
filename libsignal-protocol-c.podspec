@@ -3,7 +3,8 @@ Pod::Spec.new do |s|
   s.version      = "2.3.2"
   s.summary      = "Signal Protocol"
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
+  s.osx.deployment_target = '11.0'
 
   s.description  = <<-DESC
     This is a ratcheting forward secrecy protocol that works in synchronous and asynchronous messaging environments.
@@ -17,7 +18,7 @@ Pod::Spec.new do |s|
 								Additional Permissions For Submission to Apple App Store: Provided that you are otherwise in compliance with the GPLv3 for each covered work you convey (including without limitation making the Corresponding Source available in compliance with Section 6 of the GPLv3), Open Whisper Systems also grants you the additional permission to convey through the Apple App Store non-source executable versions of the Program as incorporated into each applicable covered work as Executable Versions only under the Mozilla Public License version 2.0 (https://www.mozilla.org/en-US/MPL/2.0/).
                 LICENSE
                }
-  s.author             = { "Open Whisper Systems" => "support@whispersystems.org" }
+  s.author       = { "Open Whisper Systems" => "support@whispersystems.org" }
 
   s.source       = { :git => "https://github.com/wuyuehyang/libsignal-protocol-c" }
 
