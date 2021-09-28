@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name         = "libsignal-protocol-c"
-  s.version      = "2.3.2"
+  s.name         = "LimaoSignalProtocolC"
+  s.version      = "2.3.3"
   s.summary      = "Signal Protocol"
 
   s.ios.deployment_target = '12.0'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     This is a ratcheting forward secrecy protocol that works in synchronous and asynchronous messaging environments.
                    DESC
 
-  s.homepage     = "https://github.com/wuyuehyang/libsignal-protocol-c"
+  s.homepage     = "https://github.com/tangtaoit/libsignal-protocol-c.git"
 
 	s.license = { :type => 'GPLv3', :text => <<-LICENSE
                 Copyright 2015-2016 Open Whisper Systems
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
                }
   s.author       = { "Open Whisper Systems" => "support@whispersystems.org" }
 
-  s.source       = { :git => "https://github.com/wuyuehyang/libsignal-protocol-c" }
+  s.source       = { :git => "https://github.com/tangtaoit/libsignal-protocol-c.git" }
 
   s.source_files  = ["src/**/*.{h,c}"]
   s.exclude_files = 'src/curve25519/ed25519/main'
