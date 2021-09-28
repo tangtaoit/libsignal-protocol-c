@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "LimaoSignalProtocolC"
+  s.name         = "libsignal-protocol-c"
   s.version      = "2.3.3"
   s.summary      = "Signal Protocol"
 
